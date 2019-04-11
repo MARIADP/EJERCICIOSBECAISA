@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Document</title>
+</head>
+<body>
+     <script>
+          let n1=prompt("Dime un número mayor a 1");
+          let n2=prompt("Dime otro número del 1 al 10");
+          /*para convertilos en num*/
+          n1=+n1; 
+          n2=+n2;
+          let mayor;
+          let menor;
+
+          function multiplicar(menor,mayor){
+               return menor*mayor;
+          }
+
+          if(n1>n2){
+               mayor=n1;
+               menor=n2;
+          }else{
+               mayor=n2;
+               menor=n1;
+          }
+
+          if(n1<1 || n1>10){
+               alert("El número 1 debe estar entre 1 y 10");  
+          } else {
+
+          }
+
+          if(menor<1 || menor>10){
+               alert("el numero" + menor + "debe estar entre 1 y 10");
+          }else if (mayor<1 || mayor>10){
+               alert("el numero" + mayor + "debe estar entre 1 y 10");
+          } else {
+
+               document.write("<table border=\"1\">");
+          // document.write('<table border="1">');
+          // document.write("<table border='1'>");
+
+          for(let i=menor; i<=mayor; i++){
+               document.write("<tr><td>" + menor + "X" + i + "</td>");
+               document.write("<td>=</td>");
+               document.write("<td>" + multiplicar(menor,mayor) + "</td></tr>");  
+          }
+          document.write("</table>");
+
+          }
+          
+        
+          
+        
+
+        
+     
+          </script>
+     
+</body>
+</html>

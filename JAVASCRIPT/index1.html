@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Document</title>
+</head>
+<body>
+     <!--
+          <script>
+          let numero1 = prompt("Dime un número");
+          let numero2 = prompt("Dime otro número");
+
+          if(numero1>numero2){
+               for(let i = numero2; i < numero1; i++)
+               {(numero1%2)
+
+               }
+
+               console.log(i);
+          } else {
+               for(let i = numero1; i < numero2; i++)
+               console.log(i);
+          }
+     </script>-->
+
+     <script>
+         
+          let n1 = prompt("Dame primero");
+          let n2 = prompt("Dame segundo");
+          /*para convertilos en num*/
+          n1=+n1; 
+          n2=+n2;
+          let mayor;
+          let menor;
+          let pares=0;
+          let impares=0;
+          let suma=0;
+
+          if(n1>n2){
+               mayor=n1;
+               menor=n2;
+          }else{
+               mayor=n2;
+               menor=n1;
+          }
+
+          /*una vez tengo cuales son mayores y menos hago el bucle*/
+          let cadena="";
+          for(let indice=menor; indice<=mayor; indice++){
+               //console.log(indice);
+
+               cadena=cadena+" "+indice;
+          /*cuales son pares o impares*/
+               if(indice%2==0){
+                    pares++;/*---pares=pares+---*/
+               }else{
+                    impares++; /*---impares=impares+---*/
+               }
+
+               suma=suma+indice;
+          }
+          console.log(cadena);
+          document.write("Los pares son: " + pares + "<br>"); /*br es un intro*/
+          document.write("Los impares son: " + impares);
+          alert("La suma total es:"+suma);
+
+     
+     </script>
+</body>
+</html>

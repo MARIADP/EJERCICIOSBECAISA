@@ -1,0 +1,23 @@
+let num1, num2, bueno;
+let veces= 0, acierto=0, fallo=0
+pregunta, lista, terminado =false;
+
+
+function juego(){
+     pregunta=document.querySelector("#pregunta");
+     lista=document.querySelectorAll("li")
+
+     lista.forEach(function(elem){
+          elem.style.backgroundColor='red'
+     })
+
+     num1=Math.floor((Math.random()*10)+1);
+     num1=Math.floor((Math.random()*10)+1);
+
+     pregunta.innerHTML="¿Cuanto es" + num1 + "x" + num2 + "?";
+
+     bueno=Math.floor(Math.random()*3)
+
+     
+
+}
