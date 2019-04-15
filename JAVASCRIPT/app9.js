@@ -4,8 +4,7 @@ img1.addEventListener("mouseenter", entrar);
 img1.addEventListener("mouseleave", salir);
 
 
-img1.addEventListener("click", entrar);
-img1.addEventListener("dblclick", salir);
+
 
 
 function entrar(){
