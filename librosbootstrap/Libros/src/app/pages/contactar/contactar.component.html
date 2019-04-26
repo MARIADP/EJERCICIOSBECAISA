@@ -1,0 +1,37 @@
+<br>
+<div class="container">
+
+  <style type="text/css">
+    h1 {
+      color: rgb(132, 8, 157);
+      text-align: center
+    }
+  </style>
+
+  <h1>CONSULTA</h1>
+
+  <div class="form-group">
+      <label for="exampleFormControlInput1">Nombre</label>
+      <input type="text" class="form-control" id="exampleFormControlInput1" [(ngModel)]="correos.nombre">
+    </div>
+
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Email</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" [(ngModel)]="correos.email">
+  </div>
+
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Asunto</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" [(ngModel)]="correos.asunto">
+  </div>
+
+
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Comenta</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+    [(ngModel)]="correos.comenta"></textarea>
+  </div>
+
+  <button type="button" class="btn btn-outline-info" (click)="enviar()">Submit</button>
+
+</div>

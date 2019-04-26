@@ -1,0 +1,49 @@
+
+<br>
+
+<div class="container" >
+ 
+  <style type="text/css">
+      h1 { 
+        color: rgb(103, 8, 108); 
+        text-align:center
+      }
+  </style>
+  <h1 > <b> Añade un nuevo libro </b></h1>
+
+  <br>
+  <br>
+
+  <div class="row">
+    <!--<div class="form-group col">
+      <label for="titulo" style="color:rgb(103, 8, 108)">
+        <h4><b>Id Libro</b></h4>
+      </label>
+      <input class="form-control" type="text" [(ngModel)]="libros.id" style="background-color:rgb(227, 232, 231);;">
+    </div>-->
+
+    <div class="form-group col">
+      <label for="titulo" style="color:rgb(103, 8, 108)">
+        <h4><b>Titulo Libro</b></h4>
+      </label>
+      <input class="form-control" type="text" [(ngModel)]="libros.titulo" style="background-color:rgb(227, 232, 231);">
+    </div>
+
+    <div class="form-group col">
+      <label for="autor" style="color:rgb(103, 8, 108)">
+        <h4><b>Autor Libro</b></h4>
+      </label>
+      <input class="form-control" type="text" [(ngModel)]="libros.autor" style="background-color:rgb(227, 232, 231);">
+    </div>
+
+    <div class="form-group col">
+      <label for="precio" style="color:rgb(103, 8, 108)">
+        <h4><b>Precio Libro</b></h4>
+      </label>
+      <input class="form-control" type="number" [(ngModel)]="libros.precio"
+        style="background-color:rgb(227, 232, 231);">
+    </div>
+  </div>
+  <button type="button" class="btn btn-info" (click)="enviar()">Submit</button>
+
+</div>

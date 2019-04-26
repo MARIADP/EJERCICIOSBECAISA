@@ -1,0 +1,20 @@
+
+.row {
+  /* Todas las filas blancas */
+  background-color: white;
+}
+
+.row:nth-child(2n+1) {
+  /* Filas impares grises */
+  background-color: rgb(207, 233, 236);
+}
+
+.row:hover {
+  /* Filas celeste al pasar el mouse */
+  background-color: rgb(190, 163, 212);
+}
+
+#uno{
+     background-color: white;
+
+}

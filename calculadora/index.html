@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+     <meta charset="utf-8">
+     <meta name="viewport"
+          content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+     <!--<link href="calculator.css" rel="stylesheet">-->
+     <!--<script src="calculator.js"></script> -->
+     <title>Calculator!</title>
+     <script src='calculator.js'></script>
+     <script src="https://unpkg.com/@ionic/core@latest/dist/ionic.js"></script>
+     <link href="https://unpkg.com/@ionic/core@latest/css/ionic.bundle.css" rel="stylesheet">
+
+
+</head>
+
+<body onload="onLoad()">
+
+     <ion-app>
+          <ion-header>
+               <ion-toolbar>
+                    <ion-title>Calculator</ion-title>
+                    <ion-buttons slot="secondary">
+                         <ion-button href="index.html?ionic:mode=md">Android</ion-button>
+                    </ion-buttons>
+                    <ion-buttons slot="primary">
+                         <ion-button href="index.html?ionic:mode=ios">IOS</ion-button>
+                    </ion-buttons>
+               </ion-toolbar>
+          </ion-header>
+
+
+          <ion-content>
+               <ion-list>
+                    <ion-item>
+                         <ion-label>Tamaño botones</ion-label>
+                         <ion-select value="default" id="size">
+                              <ion-select-option value="small">Pequeños</ion-select-option>
+                              <ion-select-option value="default">Medianos</ion-select-option>
+                              <ion-select-option value="large">Grandes</ion-select-option>
+                         </ion-select>
+                    </ion-item>
+                    <ion-item>
+                         <ion-label>Tipo botones</ion-label>
+                         <ion-select value="solid" id="type">
+                              <ion-select-option value="clear">Sin borde ni color</ion-select-option>
+                              <ion-select-option value="outline">Sólo borde</ion-select-option>
+                              <ion-select-option value="solid">Con color de fondo</ion-select-option>
+                         </ion-select>
+                    </ion-item>
+               </ion-list>
+
+
+
+
+               <ion-grid>
+                    <ion-row>
+                         <ion-col>
+                              <ion-button color="dark" expand="block" onclick="add('0')" id="result" fill="outline">0</ion-button>
+                         </ion-col>
+                    </ion-row>
+                    <ion-row>
+                         <ion-col>
+                              <ion-button color="primary" expand="block" onclick="add('1')">1</ion-button>
+                         </ion-col>
+                         <ion-col>
+                              <ion-button color="primary" expand="block" onclick="add('2')">2</ion-button>
+                         </ion-col>
+                         <ion-col>
+                              <ion-button color="primary" expand="block" onclick="add('3')">3</ion-button>
+                         </ion-col>
+                         <ion-col>
+                              <ion-button color="tertiary" expand="block" onclick="add('+')">+</ion-button>
+                         </ion-col>
+                    </ion-row>
+                    <ion-row>
+                         <ion-col>
+                              <ion-button color="primary" expand="block" onclick="add('4')">4</ion-button>
+                         </ion-col>
+                         <ion-col>
+                              <ion-button color="primary" expand="block" onclick="add('5')">5</ion-button>
+                         </ion-col>
+                         <ion-col>
+                              <ion-button color="primary" expand="block" onclick="add('6')">6</ion-button>
+                         </ion-col>
+                         <ion-col>
+                              <ion-button color="tertiary" expand="block" onclick="add('-')">-</ion-button>
+                         </ion-col>
+                    </ion-row>
+                    <ion-row>
+                         <ion-col>
+                              <ion-button color="primary" expand="block" onclick="add('7')">7</ion-button>
+                         </ion-col>
+                         <ion-col>
+                              <ion-button color="primary" expand="block" onclick="add('8')">8</ion-button>
+                         </ion-col>
+                         <ion-col>
+                              <ion-button color="primary" expand="block" onclick="add('9')">9</ion-button>
+                         </ion-col>
+                         <ion-col>
+                              <ion-button color="tertiary" expand="block" onclick="add('*')">*</ion-button>
+                         </ion-col>
+                    </ion-row>
+                    <ion-row>
+                         <ion-col size="9">
+                              <ion-button color="light" expand="block" onclick="add('0')">0</ion-button>
+                         </ion-col>
+                         <ion-col>
+                              <ion-button color="light" expand="block" onclick="add('/')">/</ion-button>
+                         </ion-col>
+                    </ion-row>
+                    <ion-row>
+                         <ion-col size="6">
+                         <ion-button color="danger" expand="block" onclick="del()">AC</ion-button>
+                         </ion-col>
+
+                         <ion-col>
+                              <ion-button color="light" expand="block" onclick="add('.')">.</ion-button>
+                         </ion-col>
+
+                         <ion-col>
+                              <ion-button color="light" expand="block" onclick="calc()">=</ion-button>
+                         </ion-col>
+
+
+                    </ion-row>
+               </ion-grid>
+</body>
+
+</html>

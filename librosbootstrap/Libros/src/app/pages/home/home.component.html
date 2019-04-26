@@ -1,0 +1,24 @@
+<div class="container">
+<br>
+<div class="container text-center bg_info">
+  <h1> <b> Listado de libros </b></h1>
+
+  <br>
+
+  <div class="row" id="uno">
+    <div class="col "><b>Id</b></div>
+    <div class="col "><b>Titulo</b></div>
+    <div class="col "><b>Autor</b></div>
+    <div class="col "><b>Precio</b></div>
+  </div>
+
+</div>
+
+<div class="row" *ngFor="let libro of libros">
+  <div class="col text-center">{{libro.id}}</div>
+  <div class="col text-cente">{{libro.titulo}}</div>
+  <div class="col text-center">{{libro.autor}}</div>
+  <div class="col text-center">{{libro.precio}}</div>
+</div>
+</div>
+
